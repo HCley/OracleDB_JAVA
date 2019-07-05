@@ -1,21 +1,39 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.IOException; 
+import java.io.PrintWriter; 
+import java.nio.charset.Charset; 
+import java.nio.file.Files; 
+import java.nio.file.Path; 
+import java.nio.file.Paths;
+import java.util.LinkedList;
+import java.io.FileNotFoundException;
 
-
+import db.*;
 
 public class WriteJSON{
+    
+    public static void toFile(String fileName, LinkedList<Table> list)throws FileNotFoundException {
+        String currDir = Paths.get("").toAbsolutePath().toString(); 
+        String dirName = currDir +"\\JSON\\" + fileName + ".JSON";
+        Path path = Paths.get(dirName); 
+		
 
-    @SuppressWarnings("unchecked")
-    private WriteJSON(){}
+        try (PrintWriter file = new PrintWriter(Files.newBufferedWriter(path, Charset.forName("UTF-8")))){ 
 
-    public static void Write(){
+            file.print("{");
+            file.print("\n\t\""+ fileName +"\": [\n");
 
-        try (FileWriter file = new FileWriter("employees.json")) {
- 
-            file.flush();
- 
-        } catch (IOException e) {
-            e.printStackTrace();
+		for(int i = 0; i < list.size(); i++){
+			file.print(list.get(i));
+            if(i != list.size() - 1)
+                file.print(",\n");
+		}
+		
+		file.print("\n\t]");
+        file.print("\n}");
+        file.close();
+        
+        }catch (IOException x){
+            System.err.format("Erro de E/S: %s%n", x);
         }
     }
 }

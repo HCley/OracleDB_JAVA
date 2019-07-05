@@ -9,12 +9,20 @@ public class app {
     private static final String password = "BI200285";
 
     private static Connection connection;
+    private static LinkedList<Table> clientes,
+                                     animais,
+                                     veterinarios,
+                                     atendimentos,
+                                     tiposexames,
+                                     exames;
+    /*
     private static LinkedList<Cliente> clientes;
     private static LinkedList<Animal> animais;
     private static LinkedList<Veterinario> veterinarios;
     private static LinkedList<Atendimento> atendimentos;
     private static LinkedList<TipoExames> tiposexames;
     private static LinkedList<Exame> exames;
+    */
     
     public static void main(String arg[]) throws SQLException, ClassNotFoundException {
 
@@ -28,13 +36,20 @@ public class app {
             user, password);
             System.out.println("Conectado ao banco.");
             
-
+            /*
             clientes = new LinkedList<Cliente>();
             animais = new LinkedList<Animal>();
             atendimentos = new LinkedList<Atendimento>();
             veterinarios = new LinkedList<Veterinario>();
             exames = new LinkedList<Exame>();
             tiposexames = new LinkedList<TipoExames>();
+            */
+            clientes = new LinkedList<Table>();
+            animais = new LinkedList<Table>();
+            atendimentos = new LinkedList<Table>();
+            veterinarios = new LinkedList<Table>();
+            exames = new LinkedList<Table>();
+            tiposexames = new LinkedList<Table>();
 
             getTable("*", "cliente");
             getTable("*", "animal");
@@ -42,13 +57,16 @@ public class app {
             getTable("*", "veterinario");
             getTable("*", "exame");
             getTable("*", "tipo_exames");
-
-                Cliente a = clientes.get(1);
-                Atendimento at = atendimentos.get(0);
-
-                System.out.println("\n"+at);
-
             connection.close();
+
+
+            WriteJSON.toFile("animal", animais);
+            WriteJSON.toFile("cliente", clientes);
+            WriteJSON.toFile("atendimento", atendimentos);
+            WriteJSON.toFile("veterinario", veterinarios);
+            WriteJSON.toFile("exame", exames);
+            WriteJSON.toFile("tipo_exames", tiposexames);
+
         }catch(Exception e){ System.out.println(e); }  
     }
 
@@ -86,6 +104,7 @@ public class app {
                             String Animal_nome = "";
                             String Animal_especie  = "";
                             String Animal_raca = "";
+                            Date Animal_idade;
 
                             while(rs.next()){
                                 Animal_nome = rs.getString(1);
@@ -93,12 +112,14 @@ public class app {
                                 Animal_codCliente = rs.getInt(3);
                                 Animal_especie = rs.getString(4);
                                 Animal_raca = rs.getString(5);
+                                Animal_idade = rs.getDate(6);
 
                                 animais.add(new Animal(Animal_nome,
                                                          Animal_codAnimal,
                                                          Animal_codCliente,
                                                          Animal_especie,
-                                                         Animal_raca));
+                                                         Animal_raca,
+                                                         Animal_idade));
                             }
                             break;
                             
