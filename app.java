@@ -15,14 +15,6 @@ public class app {
                                      atendimentos,
                                      tiposexames,
                                      exames;
-    /*
-    private static LinkedList<Cliente> clientes;
-    private static LinkedList<Animal> animais;
-    private static LinkedList<Veterinario> veterinarios;
-    private static LinkedList<Atendimento> atendimentos;
-    private static LinkedList<TipoExames> tiposexames;
-    private static LinkedList<Exame> exames;
-    */
     
     public static void main(String arg[]) throws SQLException, ClassNotFoundException {
 
@@ -36,14 +28,8 @@ public class app {
             user, password);
             System.out.println("Conectado ao banco.");
             
-            /*
-            clientes = new LinkedList<Cliente>();
-            animais = new LinkedList<Animal>();
-            atendimentos = new LinkedList<Atendimento>();
-            veterinarios = new LinkedList<Veterinario>();
-            exames = new LinkedList<Exame>();
-            tiposexames = new LinkedList<TipoExames>();
-            */
+
+
             clientes = new LinkedList<Table>();
             animais = new LinkedList<Table>();
             atendimentos = new LinkedList<Table>();
