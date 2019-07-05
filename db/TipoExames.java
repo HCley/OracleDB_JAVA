@@ -26,10 +26,12 @@ public class TipoExames extends Table{
 
     @Override
     public String toString(){
-        String line = "["+  codExames     + " " +
-                            tipo          + " " +
-                            descricao     + " " +
-                            precoTabelado + "]";
+        String line = "\t\t{" +
+                             Table.space + "cod_exames\": " + codExames + "," +
+                             Table.space + "tipo\": " + "\"" + tipo + "\"," +
+                             Table.space + "descricao\": " + "\"" + descricao + "\"," +
+                             Table.space + "preco_tabelado\": " + precoTabelado +
+                             "\n\t\t}";
         return line;
     }
 }

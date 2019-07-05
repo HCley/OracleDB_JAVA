@@ -29,11 +29,13 @@ public class Cliente extends Table{
 
     @Override
     public String toString(){
-        String line = "[" +  codCliente + " " +
-                             cpf        + " " +
-                             nome       + " " +
-                             email      + " " +
-                             telefone   + "]";
+        String line = "\t\t{" +
+                             Table.space + "cod_cliente\": " + codCliente + "," +
+                             Table.space + "cpf\": " + "\"" + telefone + "\"," +
+                             Table.space + "nome\": " + "\"" + email + "\"," +
+                             Table.space + "email\": " + "\"" + nome + "\"," + 
+                             Table.space + "telefone\": " + "\"" + cpf + "\"" + 
+                             "\n\t\t}";
         return line;
     }
 }

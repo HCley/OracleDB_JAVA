@@ -1,0 +1,74 @@
+{
+	"cliente": [
+		{
+			"cod_cliente": 1,
+			"cpf": "12347543",
+			"nome": "maria@gmail.com",
+			"email": "Maria Jaquina",
+			"telefone": "5431278145"
+		},
+		{
+			"cod_cliente": 2,
+			"cpf": "12345678",
+			"nome": "maria@gmail.com",
+			"email": "Maria Joaquina",
+			"telefone": "32145"
+		},
+		{
+			"cod_cliente": 3,
+			"cpf": "12345678",
+			"nome": "Cleyson@gmail.com",
+			"email": "Cleyson Braga",
+			"telefone": "32145"
+		},
+		{
+			"cod_cliente": 4,
+			"cpf": "12345678",
+			"nome": "Ary@gmail.com",
+			"email": "Ary Tarrago",
+			"telefone": "3210947345"
+		},
+		{
+			"cod_cliente": 5,
+			"cpf": "12345678",
+			"nome": "josefina@outlook.com",
+			"email": "Josefina Souza",
+			"telefone": "3214982375"
+		},
+		{
+			"cod_cliente": 6,
+			"cpf": "12345678",
+			"nome": "Percio@gmail.com",
+			"email": "Percio Silva",
+			"telefone": "321023805"
+		},
+		{
+			"cod_cliente": 7,
+			"cpf": "123223478",
+			"nome": "teusinho@gmail.com",
+			"email": "Matheus Souza",
+			"telefone": "321987545"
+		},
+		{
+			"cod_cliente": 8,
+			"cpf": "65435678",
+			"nome": "roberval@hotmail.com",
+			"email": "Roberval da Silva",
+			"telefone": "32098145"
+		},
+		{
+			"cod_cliente": 9,
+			"cpf": "124456678",
+			"nome": "vanessa@gmail.com",
+			"email": "Vanessa Avila",
+			"telefone": "37642145"
+		},
+		{
+			"cod_cliente": 10,
+			"cpf": "1234987",
+			"nome": "rafael@gmail.com",
+			"email": "Rafale dos Santos",
+			"telefone": "1278145"
+		}
+	]
+}

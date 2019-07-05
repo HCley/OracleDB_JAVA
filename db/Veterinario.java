@@ -31,10 +31,12 @@ public class Veterinario extends Table{
 
     @Override
     public String toString(){
-        String line = "[" +  CRMV         + " " +
-                             nome         + " " +
-                             email        + " " +
-                             plantonista  + "]";
+        String line = "\t\t{" +
+                             Table.space + "cod_animal\": " + CRMV + "," +
+                             Table.space + "cod_cliente\": " + "\"" + nome + "," +
+                             Table.space + "especie\": " + "\"" + email + "\"," + 
+                             Table.space + "raca\": " + "\"" + plantonista + "\"" + 
+                             "\n\t\t}";
         return line;
     }
 }

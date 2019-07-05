@@ -1,7 +1,5 @@
 package db;
 
-public class Table{
-    public Table(){
-
-    }
+public abstract class Table{
+    public static final String space = "\n\t\t\t\"";
 }

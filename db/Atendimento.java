@@ -29,17 +29,19 @@ public class Atendimento extends Table{
         this.codAtendimento = codAtendimento;
         this.CRMV = CRMV;
         this.codAnimal = codAnimal;
-        this.date = date;
         this.diagnostico = diagnostico;
+        this.date = date;
     }
 
     @Override
     public String toString(){
-        String line = "["  + codAtendimento + " " +
-                             CRMV           + " " +
-                             codAnimal      + " " +
-                             date           + " " +
-                             diagnostico    + "]";
+        String line = "\t\t{" +  
+                             Table.space + "cod_atendimento\": " + codAtendimento + "," +
+                             Table.space + "crmv\": " + CRMV + "," +
+                             Table.space + "cod_animal\": " + codAnimal + "," +
+                             Table.space + "Diagnostico\": " + "\"" + diagnostico + "\"," + 
+                             Table.space + "data_atendimento\": " + "\"" + date + "\"" +
+                             "\n\t\t}";
         return line;
     }
 }

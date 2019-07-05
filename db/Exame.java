@@ -27,10 +27,12 @@ public class Exame extends Table{
 
     @Override
     public String toString(){
-        String line = "["+  exameID        + " " +
-                            codExames      + " " +
-                            codAtendimento + " " +
-                            precoPraticado + "]";
+        String line = "\t\t{" +
+                             Table.space + "exame_id\": " + exameID + "," +
+                             Table.space + "cod_exames\": " + codExames + "," +
+                             Table.space + "cod_atendimento\": " + codAtendimento + "," +
+                             Table.space + "preco_praticado\": " + precoPraticado + 
+                             "\n\t\t}";
         return line;
     }
 }

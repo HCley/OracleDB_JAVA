@@ -1,0 +1,92 @@
+{
+	"animal": [
+		{
+			"nome": "Pércio",
+			"cod_animal": 1,
+			"cod_cliente": 1,
+			"especie": "gato",
+			"raca": "Persa",
+			"idade": "1993-04-25"
+		},
+		{
+			"nome": "Picle",
+			"cod_animal": 2,
+			"cod_cliente": 2,
+			"especie": "cachorro",
+			"raca": "poodle",
+			"idade": "2019-07-03"
+		},
+		{
+			"nome": "Wnbeagle",
+			"cod_animal": 3,
+			"cod_cliente": 3,
+			"especie": "cachorro",
+			"raca": "Beagle",
+			"idade": "1999-11-21"
+		},
+		{
+			"nome": "Santa Mufasa",
+			"cod_animal": 4,
+			"cod_cliente": 4,
+			"especie": "hamster",
+			"raca": "Sírio",
+			"idade": "2006-02-01"
+		},
+		{
+			"nome": "Jacob",
+			"cod_animal": 5,
+			"cod_cliente": 5,
+			"especie": "gato",
+			"raca": "sphynx",
+			"idade": "2003-05-11"
+		},
+		{
+			"nome": "Luiggi",
+			"cod_animal": 6,
+			"cod_cliente": 6,
+			"especie": "cachorro",
+			"raca": "mastim inglês",
+			"idade": "1997-12-22"
+		},
+		{
+			"nome": "Coat",
+			"cod_animal": 7,
+			"cod_cliente": 7,
+			"especie": "vaca",
+			"raca": "brown swiss",
+			"idade": "2001-01-19"
+		},
+		{
+			"nome": "Bug",
+			"cod_animal": 8,
+			"cod_cliente": 8,
+			"especie": "cavalo",
+			"raca": "shire",
+			"idade": "2000-01-01"
+		},
+		{
+			"nome": "Matriz",
+			"cod_animal": 9,
+			"cod_cliente": 9,
+			"especie": "gato",
+			"raca": "siamês",
+			"idade": "2019-07-03"
+		},
+		{
+			"nome": "Drauzo",
+			"cod_animal": 10,
+			"cod_cliente": 10,
+			"especie": "cachorro",
+			"raca": "Galgo inglês",
+			"idade": "1976-12-13"
+		},
+		{
+			"nome": "Abstênio",
+			"cod_animal": 11,
+			"cod_cliente": 7,
+			"especie": "cachorro",
+			"raca": "vira-lata",
+			"idade": "2008-05-21"
+		}
+	]
+}

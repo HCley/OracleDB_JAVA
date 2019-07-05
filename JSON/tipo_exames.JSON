@@ -1,0 +1,64 @@
+{
+	"tipo_exames": [
+		{
+			"cod_exames": 1,
+			"tipo": "radiografia convencional",
+			"descricao": "raio x da pata",
+			"preco_tabelado": 89.9
+		},
+		{
+			"cod_exames": 2,
+			"tipo": "radiografia contrastada",
+			"descricao": "ecografia",
+			"preco_tabelado": 150.0
+		},
+		{
+			"cod_exames": 3,
+			"tipo": "analise sanguinea",
+			"descricao": "exame de sangue",
+			"preco_tabelado": 69.9
+		},
+		{
+			"cod_exames": 4,
+			"tipo": "Ultrassonografia abdominal",
+			"descricao": "tomografia",
+			"preco_tabelado": 205.99
+		},
+		{
+			"cod_exames": 5,
+			"tipo": "analise de urina",
+			"descricao": "exame de urina",
+			"preco_tabelado": 89.9
+		},
+		{
+			"cod_exames": 6,
+			"tipo": "analise de fezes",
+			"descricao": "exame de fezes",
+			"preco_tabelado": 89.9
+		},
+		{
+			"cod_exames": 7,
+			"tipo": "eletroretinograma",
+			"descricao": "exame preliminar para cirurgia de catarata",
+			"preco_tabelado": 200.0
+		},
+		{
+			"cod_exames": 8,
+			"tipo": "exame preeliminar",
+			"descricao": "pré-cirurgico",
+			"preco_tabelado": 90.9
+		},
+		{
+			"cod_exames": 9,
+			"tipo": "tomografia geral",
+			"descricao": "corpo todo",
+			"preco_tabelado": 89.9
+		},
+		{
+			"cod_exames": 10,
+			"tipo": "exame de rotina",
+			"descricao": "analise geral",
+			"preco_tabelado": 100.9
+		}
+	]
+}

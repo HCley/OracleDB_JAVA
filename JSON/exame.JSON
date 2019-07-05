@@ -1,0 +1,64 @@
+{
+	"exame": [
+		{
+			"exame_id": 1,
+			"cod_exames": 2,
+			"cod_atendimento": 1,
+			"preco_praticado": 130.9
+		},
+		{
+			"exame_id": 2,
+			"cod_exames": 2,
+			"cod_atendimento": 2,
+			"preco_praticado": 90.0
+		},
+		{
+			"exame_id": 3,
+			"cod_exames": 7,
+			"cod_atendimento": 3,
+			"preco_praticado": 190.0
+		},
+		{
+			"exame_id": 4,
+			"cod_exames": 10,
+			"cod_atendimento": 4,
+			"preco_praticado": 90.0
+		},
+		{
+			"exame_id": 5,
+			"cod_exames": 8,
+			"cod_atendimento": 5,
+			"preco_praticado": 190.0
+		},
+		{
+			"exame_id": 6,
+			"cod_exames": 4,
+			"cod_atendimento": 6,
+			"preco_praticado": 200.0
+		},
+		{
+			"exame_id": 7,
+			"cod_exames": 2,
+			"cod_atendimento": 7,
+			"preco_praticado": 130.0
+		},
+		{
+			"exame_id": 8,
+			"cod_exames": 3,
+			"cod_atendimento": 8,
+			"preco_praticado": 50.0
+		},
+		{
+			"exame_id": 9,
+			"cod_exames": 6,
+			"cod_atendimento": 4,
+			"preco_praticado": 79.0
+		},
+		{
+			"exame_id": 10,
+			"cod_exames": 5,
+			"cod_atendimento": 9,
+			"preco_praticado": 79.0
+		}
+	]
+}
